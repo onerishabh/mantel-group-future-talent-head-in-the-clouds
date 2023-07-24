@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Note App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Simple Note App</h1>
+    <form action="/add" method="post">
+        <input type="text" name="note" placeholder="Enter your note here">
+        <input type="submit" value="Add Note">
+    </form>
+
+    <h2>Notes:</h2>
+    <ul>
+        {% for note in notes %}
+        <li>{{ note }}</li>
+        {% endfor %}
+    </ul>
+    <!-- Contact Us Pop-up -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="/send_message" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="subscribe">Subscribe to Mailing List:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="1">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <!-- "Contact Us" Link -->
+    <p><a href="#" id="contactLink">Contact Us</a></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show the contact modal when the "Contact Us" link is clicked
+            $("#contactLink").on("click", function () {
+                $("#contactModal").css("display", "block");
+            });
+
+            // Hide the contact modal when the close button is clicked
+            $(".close").on("click", function () {
+                $("#contactModal").css("display", "none");
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
