@@ -22,3 +22,8 @@ Welcome to the Simple Note Taking Flask Application! This web application allows
 * Replicate `/app` folder in the server using `mkdir` and `vim`. 
 * Install requirements `pip install -r requirements.txt`. 
 * Run the app! 🎉 `python3 app.py`
+
+### New Ideas
+* Dump notes being submitted to AWS S3 (Amazon's object storage service) as json. 
+* Create a user signup page and store user details on AWS RDS (Amazon's database service). 
+* 
