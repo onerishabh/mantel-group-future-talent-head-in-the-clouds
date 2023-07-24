@@ -3,6 +3,15 @@
 Welcome to the Simple Note Taking Flask Application! This web application allows users to enter and manage notes. Additionally, users can conveniently contact the admin of the web app with any queries or feedback. Please read the following sections to get started.
 ![Alt text](docs/app.png)
 
+## Features/API's
+### `/add`
+* Adds a note to the list of notes for the current user. 
+* When the user click's `Add Note`, the user's IP address and browser agent details are streamed in a AWS Dynamodb table. 
+
+### `/send_message`
+* Allows users to contact the admin with custom messages. This is done by sending user details via AWS SNS. 
+* Further, the user is given the option to signup for the mailing list. The mailing list is stored on AWS Dynamodb Table. 
+
 ## Getting Started
 ### Prerequisites
 * Python 3.x
