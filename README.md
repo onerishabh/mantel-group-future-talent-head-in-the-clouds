@@ -11,6 +11,7 @@ Welcome to the Simple Note Taking Flask Application! This web application allows
 ### `/send_message`
 * Allows users to contact the admin with custom messages. This is done by sending user details via AWS SNS. 
 * Further, the user is given the option to signup for the mailing list. The mailing list is stored on AWS Dynamodb Table. 
+* ![Alt text](docs/contact.png)
 
 ## Getting Started
 ### Prerequisites
