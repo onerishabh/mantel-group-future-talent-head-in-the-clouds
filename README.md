@@ -46,3 +46,4 @@ Welcome to the Simple Note Taking Flask Application! This web application allows
 ## Caution
 This can not be stressed enough that AWS costs can go out of hand really quickly. It is very important to have checks in place to make sure that you are not going over the free tier limit. AWS offers free tier primarliy to allow users get started with AWS quickly and upskill on the platform without any costs and this is something that needs to be utilised carefully. Refer AWS Budgets for more information. 
 * https://aws.amazon.com/about-aws/whats-new/2022/09/aws-budgets-1-click-templates-tutorials/
+* https://www.youtube.com/watch?v=O0sofGVT7uw
