@@ -33,7 +33,16 @@ Welcome to the Simple Note Taking Flask Application! This web application allows
 * Install requirements `pip install -r requirements.txt`. 
 * Run the app! 🎉 `python3 app.py`
 
-### New Ideas
-* Dump notes being submitted to AWS S3 (Amazon's object storage service) as json. 
-* Create a user signup page and store user details on AWS RDS (Amazon's database service). 
-* 
+## New Ideas
+* Dump notes being submitted to AWS S3 (Amazon's object storage service) as json - EASY
+* Create a user signup page and store user details on AWS RDS (Amazon's database service) - HARD
+* Create signup page using AWS Cognito - MEDIUM
+* Automated deployment of infrastructure CDK project using GitHub Actions - HARD (Great learning experience)
+* Simulate a traffic geneartor for your Flask application - MEDIUM
+* Write test cases for the application (and potentially infrastructure too) - MEDIUM
+* Automatically scale the server using AWS Auto Scaling Group - VERY HARD (Superp learning experience)
+* Fix the front end - EASY
+
+## Caution
+This can not be stressed enough that AWS costs can go out of hand really quickly. It is very important to have checks in place to make sure that you are not going over the free tier limit. AWS offers free tier primarliy to allow users get started with AWS quickly and upskill on the platform without any costs and this is something that needs to be utilised carefully. Refer AWS Budgets for more information. 
+* https://aws.amazon.com/about-aws/whats-new/2022/09/aws-budgets-1-click-templates-tutorials/
